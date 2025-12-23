@@ -9,6 +9,8 @@ body {
 
     margin: 0;
     color: #fff; /* white netx поверх dark video */
+    
+    background-color: #000000; /* добвил фон черный, because bg-video dont download */
 }
 
 nav {
@@ -282,6 +284,7 @@ ul {
 .HERO-LOGO {
 
 }
+
 
 
 
