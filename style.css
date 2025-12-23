@@ -90,7 +90,7 @@ ul {
 .hero {
     position: relative;
     min-height: 80vh; /* almost all screen */
-    background:  url('brandwear3noback.png') center/cover no-repeat;
+    background:  url('img/brandwear3noback.png') center/cover no-repeat;
     display: block;
     align-items: center;
     justify-content: center;
@@ -282,6 +282,7 @@ ul {
 .HERO-LOGO {
 
 }
+
 
 
 
