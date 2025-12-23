@@ -1,0 +1,287 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f3f7fA 0%, #C3CFE2 100%);
+
+    margin: 0;
+    color: #fff; /* white netx поверх dark video */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000;
+    backdrop-filter: blur(20px);
+    padding: 1rem 0;
+    z-index: 10;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #525252;
+    font-weight: bold;
+    transition: color 0.4s;
+}
+
+nav a:hover {
+    color: #76ce25;
+}
+
+section {
+    padding: 5rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+h2  {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #c4c4c4;
+    font-weight: 300;
+}
+
+
+
+p, ul {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: #9b9b9b;
+}
+ul { 
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; gap: 1rem; }
+    h1 { font-size:  1rem;}
+}
+
+.hero {
+    position: relative;
+    min-height: 80vh; /* almost all screen */
+    background:  url('img/brandwear3noback.png') center/cover no-repeat;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 80vh; /* добавил */
+    max-height: 80vw; /* добавил */
+
+
+}
+
+/* dark пленка поверх pucture */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(31, 31, 31, 0.3), rgba(0, 0, 0, 0.85));
+
+}
+
+/* block with text поверх */
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero-overlay h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.5rem;
+}
+
+.hero-overlay p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+    color: #d3d3d3;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.9rem 2.4rem;
+    border-radius: 999px;
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    background: rgb(0, 0, 0, 0.4);
+    backdrop-filter: blur(7px);
+    transition:
+    transform 0.2s ease,
+    backgroung 0.2s ease,
+    border-color 0.2s ease;
+    color: 0.2ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #ffffff;
+    color: #76ce25;
+    
+}
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* заполняет не искажая экран */
+    z-index: -2; /*under all contents */
+    filter: brightness(0.35); /* затемнить, чтобы текст был читаемым */
+}
+
+.hero-content h1 {
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 2.6rem;
+    letter-spacing: 0.18rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+
+/* video's colors */
+.bg-video{
+    filter: brightness(0.9) 
+    contrast(1.3);
+    
+    
+}
+
+
+
+/* HERE STARTS BLOCKS FOR PAGE NUMBER 2 SHOP.HTML */
+
+.shop-page {
+    min-height: 100vh;
+    padding: 6rem 2rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #fff;
+}
+.shop-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.shop-hero h1 {
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 7rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 1rem;
+}
+
+/* Grid with cards */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* Product Card */
+.product-card {
+    background: rgba(3, 3, 3, 0.356);
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(138, 138, 138, 0.74);
+    box-shadow: 0 2px 25px rgba(53, 53, 53, 0.466);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+    border-bottom: .5rem;
+}
+
+.product-card h2 {
+    font-size: 2rem;
+    letter-spacing: 0.12;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    opacity: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+/* button in cards */
+.product-btn {
+    padding: .6rem 1.6rem;
+    border-radius: 999px;
+    border: 1.4px solid rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    color: #f3f3f3e8;
+    font-size: .8rem;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    background: rgba(44, 44, 44, 0.199);
+    border-color: #e7e7e7a6;
+    box-shadow: 0 0 16px rgba(185, 175, 175, 0.35);
+}
+
+.HERO-LOGO {
+
+}
+
+
+
