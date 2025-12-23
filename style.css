@@ -5,12 +5,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #0f0f0f;
+    background-color: #131313; /*add black bg because video-bg not download */
 
     margin: 0;
     color: #fff; /* white netx поверх dark video */
     
- /* добвил фон черный, because bg-video dont download */
+
 }
 
 nav {
@@ -283,6 +283,7 @@ ul {
 .HERO-LOGO {
 
 }
+
 
 
 
