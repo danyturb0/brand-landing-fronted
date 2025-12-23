@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #000000;
+    background-color: #0f0f0f;
 
     margin: 0;
     color: #fff; /* white netx поверх dark video */
@@ -283,6 +283,7 @@ ul {
 .HERO-LOGO {
 
 }
+
 
 
 
