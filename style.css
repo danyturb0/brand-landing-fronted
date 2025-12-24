@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 2.4;
     color: #333;
     background: #111111; /*add black bg because video-bg not download */
 
@@ -283,6 +283,7 @@ ul {
 .HERO-LOGO {
 
 }
+
 
 
 
